@@ -25,7 +25,7 @@ class App extends Component {
 
   handleFeedback = ({ target }) => {
     const { feedback } = target.dataset;
-    this.setState((prevState) => {
+    this.setState(prevState => {
       return { [feedback]: prevState[feedback] + 1 };
     });
   };
@@ -37,7 +37,7 @@ class App extends Component {
 
     return (
       <>
-        <Section title={'Please leve feedback'}>
+        <Section title={'Please leave feedback'}>
           <FeedbackOptions
             options={options}
             onLeaveFeedback={this.handleFeedback}
