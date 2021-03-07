@@ -12,10 +12,10 @@ const Statistics = ({
   <>
     {total ? (
       <ul className={s.box}>
-        <li className={s.options}> Good:{good} </li>
-        <li className={s.options}> Neutral:{neutral} </li>
-        <li className={s.options}> Bad:{bad} </li>
-        <li className={s.options}> Total:{total} </li>
+        <li className={s.options}> Good: {good} </li>
+        <li className={s.options}> Neutral: {neutral} </li>
+        <li className={s.options}> Bad: {bad} </li>
+        <li className={s.options}> Total: {total} </li>
         <li className={s.options}>
           Positive feedback: {positiveFeedbackPercentage}%
         </li>

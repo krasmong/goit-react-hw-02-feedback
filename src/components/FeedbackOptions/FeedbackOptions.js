@@ -3,12 +3,11 @@ import PropTypes from 'prop-types';
 import s from './FeedbackOptions.module.css';
 
 const FeedbackOptions = ({ options, onLeaveFeedback }) => (
-  <div className={s.opptions}>
+  <div className={s.options}>
     {options.map(option => (
       <button
         className={s.button}
         type="button"
-        // dataFeedbak={option}
         data-feedback={option}
         onClick={onLeaveFeedback}
         kay={option}>
